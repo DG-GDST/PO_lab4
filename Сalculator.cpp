@@ -9,6 +9,14 @@ double addition(double firstNumber, double secondNumber){
     return firstNumber+secondNumber;
 }
 
+double multiplication(double firstNumber, double secondNumber){
+    return firstNumber*secondNumber;
+}
+
+double division(double firstNumber, double secondNumber){
+    return firstNumber / secondNumber;
+}
+
 double calculation(double firstNumber, double secondNumber, char operationCharacter){
     switch (operationCharacter)
     {
@@ -16,6 +24,10 @@ double calculation(double firstNumber, double secondNumber, char operationCharac
             return addition(firstNumber, secondNumber);
         case '-':
             return subtraction(firstNumber, secondNumber);
+        case '*':
+            return multiplication(firstNumber, secondNumber);
+        case '/':
+            return division(firstNumber, secondNumber);
         default:
             throw "undefined operation";
     }
