@@ -14,6 +14,8 @@ double multiplication(double firstNumber, double secondNumber){
 }
 
 double division(double firstNumber, double secondNumber){
+    if (secondNumber == 0)
+        throw "error, division by 0";
     return firstNumber / secondNumber;
 }
 
