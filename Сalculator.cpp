@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 double subtraction(double firstNumber, double secondNumber){
@@ -19,6 +20,10 @@ double division(double firstNumber, double secondNumber){
     return firstNumber / secondNumber;
 }
 
+double exponentiation(double firstNumber, double secondNumber){
+    return pow(firstNumber,secondNumber);
+}
+
 double calculation(double firstNumber, double secondNumber, char operationCharacter){
     switch (operationCharacter)
     {
@@ -29,6 +34,8 @@ double calculation(double firstNumber, double secondNumber, char operationCharac
         case '*':
             return multiplication(firstNumber, secondNumber);
         case '/':
+            return division(firstNumber, secondNumber);
+        case '^':
             return division(firstNumber, secondNumber);
         default:
             throw "undefined operation";
